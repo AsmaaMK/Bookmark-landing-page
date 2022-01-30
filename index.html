@@ -20,7 +20,7 @@
   <body>
     <header>
       <!-- header nav start -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+      <nav class="navbar navbar-expand-lg navbar-light py-4">
         <div class="container">
           <a class="navbar-brand" href="#"
             ><img src="./images/logo-bookmark.svg" alt="Bookmark"
@@ -39,7 +39,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
               <li class="nav-item mx-2">
                 <a class="nav-link" aria-current="page" href="#features">Features</a>
               </li>
@@ -49,10 +49,12 @@
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
+              <li>
+                <button class="btn btn-p-red px-4 ms-md-4 text-light me-0" type="button">
+                  Login
+                </button>
+              </li>
             </ul>
-            <button class="btn btn-p-red px-4 ms-4 text-light" type="button">
-              Login
-            </button>
           </div>
         </div>
       </nav>
@@ -61,18 +63,18 @@
       <!-- header section start -->
       <section>
         <div class="container my-5">
-          <div class="row align-items-center">
-            <div class="col-5">
+          <div class="row row-cols-1 row-cols-md-2 align-items-center">
+            <div class="col text-center text-md-start">
               <h1 class="h1 text-s-dark">A Simple Bookmark Manager</h1>
               <p class="text-s-light">
                 A clean and simple interface to organize your favourite
                 websites. Open a new browser tab and see your sites load
                 instantly. Try it for free.
               </p>
-              <button class="btn btn-p-blue">Get it on Chrome</button>
-              <button class="btn btn-light border text-s-light">Get it on Firefox</button>
+              <button class="btn btn-p-blue my-2">Get it on Chrome</button>
+              <button class="btn btn-light border text-s-light my-2">Get it on Firefox</button>
             </div>
-            <div class="col-7">
+            <div class="col order-first order-md-last">
               <img
                 class="container-fluid px-0"
                 src="./images/illustration-hero.svg"
@@ -91,7 +93,7 @@
         <div class="container">
           <!-- features header start -->
           <div class="row justify-content-center">
-            <div class="col-5 text-center">
+            <div class="col-md-6 text-center">
               <h2 class="my-4 text-s-dark">Features</h2>
               <p class="mb-5 text-s-light">
                 Our aim is to make it quick and easy for you to access your
@@ -104,9 +106,9 @@
 
           <!-- nav tabs start -->
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs row justify-content-center" id="nav-tab" role="tablist">
               <button
-                class="nav-link active"
+                class="tab-link nav-link col active"
                 id="nav-simple-bookmarking-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-simple-bookmarking"
@@ -119,7 +121,7 @@
               </button>
 
               <button
-                class="nav-link"
+                class="tab-link nav-link col"
                 id="nav-speedly-searching-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-speedly-searching"
@@ -132,7 +134,7 @@
               </button>
 
               <button
-                class="nav-link"
+                class="tab-link nav-link col"
                 id="nav-easy-sharing-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-easy-sharing"
@@ -157,14 +159,14 @@
               aria-labelledby="nav-simple-bookmarking-tab"
             >
               <div class="row align-items-center my-5 gap-5">
-                <div class="col-6">
+                <div class="col-md-6">
                   <img
                     class="container-fluid px-0"
                     src="./images/illustration-features-tab-1.svg"
                     alt=""
                   />
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <h2 class="h2 text-s-dark">Bookmark in one click</h2>
                   <p class="text-s-light">
                     Organize your bookmarks however you like. Our simple
@@ -185,14 +187,14 @@
               aria-labelledby="nav-speedly-searching-tab"
             >
               <div class="row align-items-center my-5 gap-5">
-                <div class="col-6">
+                <div class="col-md-6">
                   <img
                     class="container-fluid px-0"
                     src="./images/illustration-features-tab-2.svg"
                     alt=""
                   />
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <h2 class="h2 text-s-dark">Intelligent search</h2>
                   <p class="text-s-light">
                     Our powerful search feature will help you find saved sites
@@ -213,14 +215,14 @@
               aria-labelledby="nav-easy-sharing-tab"
             >
               <div class="row align-items-center my-5 gap-5">
-                <div class="col-6">
+                <div class="col-md-6">
                   <img
                     class="container-fluid px-0"
                     src="./images/illustration-features-tab-3.svg"
                     alt=""
                   />
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <h2 class="h2 text-s-dark">Share your bookmarks</h2>
                   <p class="text-s-light">
                     Easily share your bookmarks and collections with others.
@@ -243,7 +245,7 @@
         <div class="container">
           <!-- download header start -->
           <div class="row justify-content-center">
-            <div class="col-5 text-center">
+            <div class="col-md-5 text-center">
               <h2 class="my-4 text-s-dark">Download the extension</h2>
               <p class="text-s-light">
                 We've got more browsers in the pipeline. Please do let us know
@@ -256,7 +258,7 @@
           <!-- cards start -->
           <div
             class="row justify-content-center gap-4 my-5"
-            style="height: 400px"
+            style="min-height: 400px"
           >
             <!-- chrome card start -->
             <div class="card align-self-start" style="width: 18rem">
@@ -325,7 +327,7 @@
         <div class="container">
           <!-- questions header start -->
           <div class="row justify-content-center">
-            <div class="col-5 text-center">
+            <div class="col-md-5 text-center">
               <h2 class="my-4 text-s-dark">Frequently Asked Questions</h2>
               <p class="mb-5 text-s-light">
                 Here are some of our FAQs. If you have any other questions you'd
@@ -336,7 +338,7 @@
           <!-- questions header end -->
 
           <div class="row justify-content-center text-center">
-            <div class="accordion col-6" id="questionAccordion">
+            <div class="accordion col-md-6" id="questionAccordion">
               <!-- question 1 start -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="questionOne">
@@ -460,8 +462,8 @@
               <!-- question 4 end -->
             </div>
           </div>
-          <div class="row">
-            <button class="btn btn-p-blue col-2 mx-auto my-5">More Info</button>
+          <div class="text-center">
+            <button class="btn btn-p-blue mx-auto my-5">More Info</button>
           </div>
         </div>
       </section>
@@ -471,24 +473,24 @@
     <footer>
       <!-- footer section start -->
       <section id="contact" class="bg-p-blue">
-        <div class="container py-5 col-6">
+        <div class="container py-5 col-md-6">
           <p class="text-light text-center">35,000 Already joined</p>
           <h2 class="text-light text-center">
             Stay up-to-date with what we're doing
           </h2>
 
-          <form class="row justify-content-space-between align-items-center">
-            <div class="col-8 form-floating">
+          <form class="row justify-content-center align-items-center mt-5">
+            <div class="col-auto form-floating">
               <input
                 type="email"
                 placeholder="Enter you email address"
                 class="form-control"
                 id="floatingTextarea2"
               />
-              <label for="floatingTextarea2" class="text-s-light">Enter you email address</label>
+              <label for="floatingTextarea2" class="text-s-light px-4">Enter you email address</label>
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-p-red text-light">
+              <button type="submit" class="btn btn-p-red text-light mt-4 mt-md-0">
                 Contact Us
               </button>
             </div>
@@ -501,7 +503,7 @@
       <nav
         class="navbar navbar-expand-lg navbar-light bg-s-dark py-4"
       >
-        <div class="container">
+        <div class="container justify-content-center align-items-center">
           <a class="navbar-brand" href="#"
             ><img
               class="text-light"
@@ -509,23 +511,23 @@
               alt=""
           /></a>
 
-          <div class="me-auto" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item mx-2">
+          <div class="me-md-auto" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
                 <a class="nav-link text-s-light" aria-current="page" href="#"
                   >Features</a
                 >
               </li>
-              <li class="nav-item mx-2">
+              <li class="nav-item">
                 <a class="nav-link text-s-light" href="#">Pricing</a>
               </li>
-              <li class="nav-item mx-2">
+              <li class="nav-item">
                 <a class="nav-link text-s-light" href="#">Contact</a>
               </li>
             </ul>
           </div>
 
-          <div class="" id="navbarTogglerDemo02">
+          <div class="social" id="navbarTogglerDemo02">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item mx-2">
                 <a class="nav-link" aria-current="page" href="#"

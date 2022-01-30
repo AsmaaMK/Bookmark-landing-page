@@ -11493,5 +11493,59 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* features section start */
+.nav-tabs {
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav-tabs .tab-link {
+  border: none;
+  min-width: 100%;
+  margin-bottom: 0;
+  color: #9194a1;
+  border-bottom: 1px solid #9194a1;
+}
+.nav-tabs .tab-link:hover, .nav-tabs .tab-link:focus {
+  border-bottom: 1px solid #9194a1;
+  color: #fa5757 !important;
+}
+.nav-tabs .tab-link.active {
+  border-bottom: 3px solid #fa5757 !important;
+}
+@media (min-width: 768px) {
+  .nav-tabs .tab-link {
+    min-width: unset;
+  }
+}
+
+/* features section end */
+/* footer start */
+footer form input {
+  min-width: 300px !important;
+  height: 50px !important;
+}
+footer form button {
+  width: 300px !important;
+  height: 50px;
+}
+@media (min-width: 768px) {
+  footer form button {
+    width: unset !important;
+  }
+}
+footer nav .container {
+  flex-direction: column !important;
+}
+@media (min-width: 768px) {
+  footer nav .container {
+    flex-direction: row !important;
+  }
+}
+footer nav .social ul {
+  flex-direction: row !important;
+}
+
+/* footer end */
 
 /*# sourceMappingURL=main.css.map */
