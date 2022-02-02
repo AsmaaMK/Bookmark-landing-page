@@ -27,9 +27,23 @@ $font-family-sans-serif: "Rubik", sans-serif; // bootstrap variable
 // bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+
+
+/* -- global rules start -- */
+
+* {
+  box-sizing: border-box;
+}
+
 .row {
   --bs-gutter-x: 0;
 }
+
+section {
+  margin-top: 100px;
+}
+
 
 /* custom containers */
 
@@ -69,7 +83,8 @@ $font-family-sans-serif: "Rubik", sans-serif; // bootstrap variable
   }
 }
 
-/* background shapes */
+
+/* background shapes (used in header and features section) */
 
 .background-shape-right,
 .background-shape-left {
@@ -97,7 +112,10 @@ $font-family-sans-serif: "Rubik", sans-serif; // bootstrap variable
   border-radius: 0 500px 500px 0;
 }
 
-/* header start */
+/* -- global rules end -- */
+
+
+/* -- header start -- */
 
 .hidden {
   display: none;
@@ -112,7 +130,7 @@ header {
     }
 
     .offcanvas-header {
-      width: 100%;
+      width: 90%;
       margin-bottom: 2em;
 
       .social {
@@ -214,13 +232,13 @@ header {
   }
 
   section {
-    margin-top: 100px;
+    margin-top: 150px !important;
   }
 }
 
-/* header start */
+/* -- header end -- */
 
-/* features section start */
+/* -- features section start -- */
 
 .nav-tabs {
   border: none;
@@ -251,14 +269,56 @@ header {
   }
 }
 
-/* features section end */
+/* -- features section end -- */
 
-/* footer start */
+
+/* -- download section start -- */
+
+#download {
+  .card {
+    border: none;
+    box-shadow: 0 0.8rem 1rem 0px rgba(map-get($custom-theme-colors, "p-blue"), 15%);
+    border-radius: 10px;
+  }
+}
+
+/* -- download section end -- */
+
+
+/* -- questions section start -- */
+
+// FIXME: I can't override this variable :(
+$accordion-button-active-icon: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>') !important;
+
+.accordion-item {
+  border-left: none;
+  border-right: none;
+
+  .accordion-button {
+    &::after {
+      /* comment the following line to see the default arrow icon */
+      content: url('../images/icon-arrow.svg') !important;
+    }
+  }
+}
+
+/* -- questions section end -- */
+
+
+/* -- footer start -- */
+
 footer {
   form {
-    input {
-      min-width: 300px !important;
-      height: 50px !important;
+    .form-floating {
+
+      input {
+        min-width: 300px !important;
+        height: 50px !important;
+      }
+  
+      .floating-label {
+        top: -4px;
+      }
     }
 
     button {
@@ -288,4 +348,4 @@ footer {
   }
 }
 
-/* footer end */
+/* -- footer end -- */

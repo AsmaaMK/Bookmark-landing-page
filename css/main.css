@@ -11493,8 +11493,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* -- global rules start -- */
+* {
+  box-sizing: border-box;
+}
+
 .row {
   --bs-gutter-x: 0;
+}
+
+section {
+  margin-top: 100px;
 }
 
 /* custom containers */
@@ -11540,7 +11549,7 @@ textarea.form-control-lg {
   }
 }
 
-/* background shapes */
+/* background shapes (used in header and features section) */
 .background-shape-right,
 .background-shape-left {
   position: relative;
@@ -11567,7 +11576,8 @@ textarea.form-control-lg {
   border-radius: 0 500px 500px 0;
 }
 
-/* header start */
+/* -- global rules end -- */
+/* -- header start -- */
 .hidden {
   display: none;
 }
@@ -11580,7 +11590,7 @@ header nav.blured-background {
   backdrop-filter: blur(8px);
 }
 header nav .offcanvas-header {
-  width: 100%;
+  width: 90%;
   margin-bottom: 2em;
 }
 header nav .offcanvas-header .social {
@@ -11666,11 +11676,11 @@ header nav .nav-link {
   }
 }
 header section {
-  margin-top: 100px;
+  margin-top: 150px !important;
 }
 
-/* header start */
-/* features section start */
+/* -- header end -- */
+/* -- features section start -- */
 .nav-tabs {
   border: none;
   align-items: center;
@@ -11697,11 +11707,33 @@ header section {
   }
 }
 
-/* features section end */
-/* footer start */
-footer form input {
+/* -- features section end -- */
+/* -- download section start -- */
+#download .card {
+  border: none;
+  box-shadow: 0 0.8rem 1rem 0px rgba(83, 104, 223, 0.15);
+  border-radius: 10px;
+}
+
+/* -- download section end -- */
+/* -- questions section start -- */
+.accordion-item {
+  border-left: none;
+  border-right: none;
+}
+.accordion-item .accordion-button::after {
+  /* comment the following line to see the default arrow icon */
+  content: url("../images/icon-arrow.svg") !important;
+}
+
+/* -- questions section end -- */
+/* -- footer start -- */
+footer form .form-floating input {
   min-width: 300px !important;
   height: 50px !important;
+}
+footer form .form-floating .floating-label {
+  top: -4px;
 }
 footer form button {
   width: 300px !important;
@@ -11724,6 +11756,6 @@ footer nav .social ul {
   flex-direction: row !important;
 }
 
-/* footer end */
+/* -- footer end -- */
 
 /*# sourceMappingURL=main.css.map */
