@@ -296,8 +296,12 @@ header {
 
   .accordion-button {
     &::after {
-      /* comment the following line to see the default arrow icon */
-      content: url('../images/icon-arrow.svg') !important;
+      content: '';
+      background-image: url("../images/icon-arrow.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 0.8rem;
+      height: 0.8rem;
     }
   }
 }
