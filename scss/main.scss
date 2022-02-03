@@ -1,9 +1,19 @@
+// override bootstrap variables
 @import "override-bootstrap";
+// bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// google font
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
 
 /* -- global rules start -- */
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
 }
 
 .row {
@@ -93,12 +103,12 @@ section {
 
 header {
   nav {
-    /* blured background */
     &.blured-background {
       background-color: rgba(white, 0.8);
       backdrop-filter: blur(8px);
     }
 
+    /* offcanvas header and footer (brand logo, close btn, and social links in the footer) */
     .offcanvas-header {
       width: 90%;
       margin-bottom: 2em;

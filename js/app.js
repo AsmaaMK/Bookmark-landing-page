@@ -22,7 +22,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 
-/* close the navbar when clicking a link */
+/* close the navbar (offcanvas) when clicking a link */
 nav.addEventListener("click", (e) => {
   if (e.target.nodeName === "A") {
     closeBtn.click();
